@@ -1,6 +1,7 @@
 using Core.Managers;
 using Core.Entitys;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 
 namespace Everything
@@ -45,10 +46,21 @@ namespace Everything
 
         private void KayitliOgrenciGetir_Click(object sender, EventArgs e)
         {
-          
+
             string name = KayitliOgrenciBox.Text;
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = manager.GetByName(name);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name = KayitliOgrenciBox.Text;           
+            manager.DeleteByName(name);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            manager.DeleteAll();
         }
     }
 }
