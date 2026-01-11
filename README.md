@@ -1,6 +1,10 @@
 # Everything
 
 
-https://hizliresim.com/mxqaing
-\_Öğrenci Yönetim Uygulamamızın ana ekran görüntüsü.\_
+![Uygulama Ekranı](https://i.hizliresim.com/mxqaing.png)
+
+
+
+
+Öğrenci Yönetim Uygulamamızın ana ekran görüntüsü.
 
