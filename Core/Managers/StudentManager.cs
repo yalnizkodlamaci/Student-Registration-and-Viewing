@@ -21,5 +21,10 @@ namespace Core.Managers
         {
             return student;
         }
+
+        public List<Student> GetByName(string name)
+        {
+            return student.Where(x => x.Name == name).ToList();
+        }
     }
 }

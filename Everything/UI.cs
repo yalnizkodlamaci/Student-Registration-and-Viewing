@@ -42,5 +42,13 @@ namespace Everything
         {
 
         }
+
+        private void KayitliOgrenciGetir_Click(object sender, EventArgs e)
+        {
+          
+            string name = KayitliOgrenciBox.Text;
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = manager.GetByName(name);
+        }
     }
 }

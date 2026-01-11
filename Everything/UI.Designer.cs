@@ -37,6 +37,9 @@
             label3 = new Label();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
+            KayitliOgrenciGetir = new Button();
+            KayitliOgrenciBox = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -47,7 +50,7 @@
             StudentAddButton.BackgroundImageLayout = ImageLayout.None;
             StudentAddButton.FlatStyle = FlatStyle.Popup;
             StudentAddButton.ForeColor = SystemColors.ActiveCaptionText;
-            StudentAddButton.Location = new Point(630, 377);
+            StudentAddButton.Location = new Point(628, 270);
             StudentAddButton.Name = "StudentAddButton";
             StudentAddButton.Size = new Size(102, 23);
             StudentAddButton.TabIndex = 0;
@@ -59,7 +62,7 @@
             // 
             StudentShowButton.BackColor = Color.Lavender;
             StudentShowButton.FlatStyle = FlatStyle.Popup;
-            StudentShowButton.Location = new Point(128, 389);
+            StudentShowButton.Location = new Point(114, 352);
             StudentShowButton.Name = "StudentShowButton";
             StudentShowButton.Size = new Size(114, 23);
             StudentShowButton.TabIndex = 2;
@@ -69,14 +72,14 @@
             // 
             // StudentNameBox
             // 
-            StudentNameBox.Location = new Point(606, 294);
+            StudentNameBox.Location = new Point(606, 208);
             StudentNameBox.Name = "StudentNameBox";
             StudentNameBox.Size = new Size(145, 23);
             StudentNameBox.TabIndex = 3;
             // 
             // StudentPasswordBox
             // 
-            StudentPasswordBox.Location = new Point(606, 323);
+            StudentPasswordBox.Location = new Point(606, 241);
             StudentPasswordBox.Name = "StudentPasswordBox";
             StudentPasswordBox.Size = new Size(145, 23);
             StudentPasswordBox.TabIndex = 4;
@@ -85,7 +88,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Monocraft", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(467, 301);
+            label1.Location = new Point(485, 215);
             label1.Name = "label1";
             label1.Size = new Size(115, 16);
             label1.TabIndex = 5;
@@ -95,7 +98,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Monocraft", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(467, 330);
+            label3.Location = new Point(467, 248);
             label3.Name = "label3";
             label3.Size = new Size(133, 16);
             label3.TabIndex = 7;
@@ -105,9 +108,9 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources._20250730_0145_Şık_Y_Logo_simple_compose_01k1c5q78bfq999zbs951ket0z;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(402, 30);
+            pictureBox1.Location = new Point(606, 30);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(386, 247);
+            pictureBox1.Size = new Size(182, 134);
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
@@ -116,9 +119,38 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(39, 40);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(305, 343);
+            dataGridView1.Size = new Size(281, 306);
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // KayitliOgrenciGetir
+            // 
+            KayitliOgrenciGetir.BackColor = Color.Lavender;
+            KayitliOgrenciGetir.FlatStyle = FlatStyle.Popup;
+            KayitliOgrenciGetir.Location = new Point(606, 367);
+            KayitliOgrenciGetir.Name = "KayitliOgrenciGetir";
+            KayitliOgrenciGetir.Size = new Size(161, 23);
+            KayitliOgrenciGetir.TabIndex = 10;
+            KayitliOgrenciGetir.Text = "Kayıtlı Öğrenci Getir";
+            KayitliOgrenciGetir.UseVisualStyleBackColor = false;
+            KayitliOgrenciGetir.Click += KayitliOgrenciGetir_Click;
+            // 
+            // KayitliOgrenciBox
+            // 
+            KayitliOgrenciBox.Location = new Point(606, 338);
+            KayitliOgrenciBox.Name = "KayitliOgrenciBox";
+            KayitliOgrenciBox.Size = new Size(145, 23);
+            KayitliOgrenciBox.TabIndex = 11;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Monocraft", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(485, 345);
+            label2.Name = "label2";
+            label2.Size = new Size(115, 16);
+            label2.TabIndex = 12;
+            label2.Text = "Öğrenci İsim";
             // 
             // UI
             // 
@@ -127,6 +159,9 @@
             BackColor = SystemColors.ControlDarkDark;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(KayitliOgrenciBox);
+            Controls.Add(KayitliOgrenciGetir);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Controls.Add(label3);
@@ -156,5 +191,8 @@
         private Label label3;
         private PictureBox pictureBox1;
         private DataGridView dataGridView1;
+        private Button KayitliOgrenciGetir;
+        private TextBox KayitliOgrenciBox;
+        private Label label2;
     }
 }
